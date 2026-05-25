@@ -1,0 +1,10 @@
+parent_brand,Gnrc_Name,indication,spend_2019_m,spend_2020_m,spend_2021_m,spend_2022_m,spend_2023_m
+Bydureon,Exenatide Microspheres,diabetes (covered),489.6,507.9,440.3,355.7,284.1
+Byetta,Exenatide,diabetes (covered),61.4,47.7,38.0,27.5,20.6
+Mounjaro,Tirzepatide,diabetes (covered),,,,144.0,2361.4
+Ozempic,Semaglutide,diabetes (covered),552.4,1455.8,2621.7,4628.2,9194.0
+Rybelsus,Semaglutide,diabetes (covered),0.4,73.4,454.6,974.9,1665.9
+Trulicity,Dulaglutide,diabetes (covered),2272.9,3284.9,4702.2,6225.3,7363.9
+Victoza,Liraglutide,diabetes (covered),1894.0,1895.3,1757.2,1557.8,1321.8
+Saxenda,Liraglutide,obesity (excluded),,,0.0,,0.0
+Wegovy,Semaglutide,obesity (excluded),,,,,0.2
