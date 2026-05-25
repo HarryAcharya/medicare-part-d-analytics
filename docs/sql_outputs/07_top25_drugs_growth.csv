@@ -1,0 +1,26 @@
+rnk,Brnd_Name,Gnrc_Name,spend_2023_b,spend_2022_b,yoy_pct,spend_2019_b,five_yr_pct
+1,Eliquis,Apixaban,18.27,15.22,20.1,7.3,150.2
+2,Ozempic,Semaglutide,9.19,4.63,98.7,0.55,1564.4
+3,Jardiance,Empagliflozin,8.84,5.85,51.1,1.45,510.7
+4,Trulicity,Dulaglutide,7.36,6.23,18.3,2.27,224.0
+5,Xarelto,Rivaroxaban,6.31,5.77,9.3,4.08,54.8
+6,Trelegy Ellipta,Fluticasone/Umeclidin/Vilanter,4.46,3.34,33.4,0.82,442.5
+7,Humira(Cf) Pen,Adalimumab,4.42,3.69,19.6,1.21,266.6
+8,Farxiga,Dapagliflozin Propanediol,4.34,2.58,68.0,0.51,754.6
+9,Januvia,Sitagliptin Phosphate,4.09,4.1,-0.2,3.54,15.7
+10,Revlimid,Lenalidomide,3.86,5.94,-35.0,4.67,-17.4
+11,Entresto,Sacubitril/Valsartan,3.43,2.49,37.8,0.81,322.5
+12,Lantus Solostar,"Insulin Glargine,Hum.Rec.Anlog",3.16,2.87,9.9,2.5,26.5
+13,Biktarvy,Bictegrav/Emtricit/Tenofov Ala,3.15,2.7,16.6,1.12,181.6
+14,Stelara*,Ustekinumab,2.99,2.34,27.7,0.8,275.3
+15,Xtandi,Enzalutamide,2.6,2.44,6.8,1.42,83.1
+16,Myrbetriq,Mirabegron,2.51,2.25,11.4,1.44,73.7
+17,Imbruvica,Ibrutinib,2.37,2.85,-16.9,2.44,-2.8
+18,Mounjaro,Tirzepatide,2.36,0.14,1539.4,,
+19,Enbrel Sureclick,Etanercept,2.05,1.78,15.2,1.29,59.1
+20,Ibrance,Palbociclib,2.02,1.95,3.7,1.83,10.7
+21,Symbicort,Budesonide/Formoterol Fumarate,2.0,1.96,2.0,2.02,-0.6
+22,Jakafi,Ruxolitinib Phosphate,1.94,1.76,10.5,1.12,72.5
+23,Novolog Flexpen,Insulin Aspart,1.88,1.84,1.9,1.84,1.7
+24,Ofev,Nintedanib Esylate,1.84,1.76,4.2,0.79,132.7
+25,Linzess,Linaclotide,1.83,1.58,15.4,0.98,85.5

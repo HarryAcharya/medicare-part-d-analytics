@@ -1,0 +1,7 @@
+metric,value_b,pct_of_growth
+Spend 2019 ($B),178.94,
+Spend 2023 ($B),275.92,
+Total growth 2019->2023 ($B),96.98,100.0
+  Volume effect ($B)   [more Rx at 2019 prices],22.36,23.1
+  Price effect ($B)    [2019 Rx at 2023 prices; incl. mix shift],66.34,68.4
+  Interaction ($B)     [growth in both V and P simultaneously],8.29,8.5
