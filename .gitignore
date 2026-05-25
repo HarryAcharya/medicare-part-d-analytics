@@ -1,0 +1,25 @@
+﻿# Data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.duckdb
+*.duckdb.wal
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Power BI temp
+~$*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
