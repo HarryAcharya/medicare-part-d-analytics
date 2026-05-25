@@ -2,9 +2,9 @@
 
 End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–2023), with a dedicated investigation of GLP-1 receptor agonists — the drug class projected to consume **17–21% of Medicare Part D spending by 2027**.
 
-**Status:** Analytical core complete (Phases 1, 2, 3). Power BI, Streamlit, and memo deliverables in progress.
+**🚀 Live demo: [partd-analytics-hari.streamlit.app](https://partd-analytics-hari.streamlit.app/)** — interactive dashboard with searchable top-25 drug explorer, tunable 3-scenario GLP-1 spend forecast (2024–2027), and PBM utilization-management simulator.
 
----
+**Status:** Analytical core complete (Phases 1–3). Interactive dashboard deployed (Phase 5). Power BI dashboard and memo deliverables in progress.
 
 ## Headline findings
 
@@ -86,7 +86,7 @@ End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–
 | 2. Foundation SQL Analysis | ✅ Complete | YoY growth, top-25 ranking, Volume × Price decomposition, GDR opportunity, therapeutic class shift |
 | 3. GLP-1 Deep-Dive | ✅ Complete | Conversion rate, off-label inference (593K excess Ozempic benes), 3-scenario 2024–2027 forecast |
 | 4. Power BI Dashboard | ⏳ Next | 4-page interactive dashboard incl. dedicated GLP-1 page |
-| 5. Streamlit App | ⏳ | Live web app with interactive GLP-1 forecast simulator |
+| | 5. Streamlit App | ✅ Complete | [Live web app](https://partd-analytics-hari.streamlit.app/) — searchable drug explorer + 3-scenario GLP-1 forecast + PBM UM simulator |
 | 6. Memos + Polish | ⏳ | Executive memo (CFO), utilization memo (P&T committee) |
 | 7. Interview prep | ⏳ | Talk track, resume bullets, LinkedIn post |
 
