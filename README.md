@@ -85,9 +85,9 @@ End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–
 | 1. Foundation + GLP-1 baseline | ✅ Complete | Data load, schema reshape, GLP-1 family inventory, CMS validation |
 | 2. Foundation SQL Analysis | ✅ Complete | YoY growth, top-25 ranking, Volume × Price decomposition, GDR opportunity, therapeutic class shift |
 | 3. GLP-1 Deep-Dive | ✅ Complete | Conversion rate, off-label inference (593K excess Ozempic benes), 3-scenario 2024–2027 forecast |
-| 4. Power BI Dashboard | ⏳ Next | 4-page interactive dashboard incl. dedicated GLP-1 page |
+| 4. Power BI | ✅ Complete | [4-page PDF dashboard](dashboard/medicare_partd_dashboard.pdf) — Executive Overview, V x P Decomposition, GDR Opportunity, GLP-1 Deep Dive |
 | | 5. Streamlit App | ✅ Complete | [Live web app](https://partd-analytics-hari.streamlit.app/) — searchable drug explorer + 3-scenario GLP-1 forecast + PBM UM simulator |
-| 6. Memos + Polish | ⏳ | Executive memo (CFO), utilization memo (P&T committee) |
+| 6. Memos | ✅ Complete | [CFO memo](docs/memos/medicare_partd_cfo_memo.pdf) (2-page executive) + [P&T memo](docs/memos/medicare_partd_pt_committee_memo.pdf) (1-page operational) |
 | 7. Interview prep | ⏳ | Talk track, resume bullets, LinkedIn post |
 
 ---
