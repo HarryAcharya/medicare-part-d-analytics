@@ -4,7 +4,7 @@ End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–
 
 **🚀 Live demo: [partd-analytics-hari.streamlit.app](https://partd-analytics-hari.streamlit.app/)** — interactive dashboard with searchable top-25 drug explorer, tunable 3-scenario GLP-1 spend forecast (2024–2027), and PBM utilization-management simulator.
 
-**Status:** Analytical core complete (Phases 1–3). Interactive dashboard deployed (Phase 5). Power BI dashboard and memo deliverables in progress.
+**Status:** All planned analytical and deliverable phases complete. Live Streamlit dashboard, 4-page Power BI dashboard, two executive memos, 13 SQL files, and validation harness all available in this repo.
 
 ## Headline findings
 
@@ -35,7 +35,7 @@ End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–
 | 2026 | $55.7B | $58.6B | **$47.4B** ← IRA bites |
 | 2027 | **$64.7B** | **$71.2B** | **$54.4B** |
 
-- **Status quo: GLP-1 diabetes spend nearly triples again**, $22B → $65B over four years. Another $42.5B added to Part D from one drug class.
+- **Status quo:** GLP-1 diabetes spend nearly triples again, $22B → $65B over four years. Another $42.5B added to Part D from one drug class.
 - **Obesity coverage** adds ~$6.5B/yr by 2027 — modest at conservative uptake.
 - **IRA negotiation** pulls ~$10.3B/yr out of Part D — one drug, one policy lever.
 - **GLP-1 share of Part D by 2027:** 19% (status quo) → 21% (obesity) → 17% (IRA). Up from 2.9% in 2019.
@@ -76,6 +76,20 @@ End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–
 
 ## Repository structure
 
+```
+medicare-part-d-analytics/
+├── dashboard/        # Power BI dashboard (.pbix source + PDF export)
+├── data/             # CMS source data (raw/ gitignored) + processed DuckDB (gitignored)
+├── docs/
+│   ├── memos/        # Executive CFO memo + P&T committee memo (PDFs)
+│   └── sql_outputs/  # CSV outputs of all SQL files + forecast chart PNG
+├── sql/              # 13 SQL files demonstrating analytical techniques
+├── src/              # Python scripts (run_sql.py, forecast_glp1.py, validate_phase1.py)
+├── streamlit/        # Live interactive dashboard source (app.py)
+├── README.md
+└── requirements.txt
+```
+
 ---
 
 ## Phase roadmap
@@ -86,9 +100,8 @@ End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–
 | 2. Foundation SQL Analysis | ✅ Complete | YoY growth, top-25 ranking, Volume × Price decomposition, GDR opportunity, therapeutic class shift |
 | 3. GLP-1 Deep-Dive | ✅ Complete | Conversion rate, off-label inference (593K excess Ozempic benes), 3-scenario 2024–2027 forecast |
 | 4. Power BI | ✅ Complete | [4-page PDF dashboard](dashboard/medicare_partd_dashboard.pdf) — Executive Overview, V x P Decomposition, GDR Opportunity, GLP-1 Deep Dive |
-| | 5. Streamlit App | ✅ Complete | [Live web app](https://partd-analytics-hari.streamlit.app/) — searchable drug explorer + 3-scenario GLP-1 forecast + PBM UM simulator |
+| 5. Streamlit App | ✅ Complete | [Live interactive dashboard](https://partd-analytics-hari.streamlit.app/) — searchable drug explorer + 3-scenario GLP-1 forecast + PBM utilization-management simulator |
 | 6. Memos | ✅ Complete | [CFO memo](docs/memos/medicare_partd_cfo_memo.pdf) (2-page executive) + [P&T memo](docs/memos/medicare_partd_pt_committee_memo.pdf) (1-page operational) |
-| 7. Interview prep | ⏳ | Talk track, resume bullets, LinkedIn post |
 
 ---
 
@@ -109,7 +122,6 @@ End-to-end analytics on five years of CMS Medicare Part D drug spending (2019–
 | Class-share evolution | `sql/11_glp1_conversion_rate.sql` |
 | `LAG()` partitioned by brand | `sql/12_glp1_offlabel_inference.sql` |
 | 3-scenario forecast model (Python) | `src/forecast_glp1.py` |
-| Joins (FDA Orange Book layer) | Phase 6 polish |
 
 ---
 
@@ -133,8 +145,7 @@ pip install -r requirements.txt
 #    Get the latest Medicare Part D Spending by Drug Excel file from
 #    https://data.cms.gov and place it in data/raw/
 
-# 4. Build the DuckDB database
-#    (Manual via DuckDB CLI for now; build_db.py script planned for Phase 6.)
+# 4. Build the DuckDB database from the source Excel via DuckDB CLI
 
 # 5. Run any analytical query
 python src/run_sql.py sql/08_volume_price_decomposition.sql
